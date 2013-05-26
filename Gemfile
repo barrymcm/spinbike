@@ -37,4 +37,14 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # To use debugger
 # gem 'debugger'
 
+group :development, :testgem do 
+   gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+
+gem 'thin'
+
 gem "will_paginate", "~> 3.0"
