@@ -1,0 +1,137 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#banner {
+  background: #8CD2E1;
+  padding: 10px 0 20px 15px;
+  border-bottom: 2px solid;
+  border-bottom-color: #000;
+  font: small-caps 40px/40px "arial", serif;
+  color: #000;
+  text-align: center;
+
+  img {
+    float: left;
+  }
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  background: #fff;
+
+  #main {
+    margin-left: 17em;
+    padding: 1em 1em 1em 7em;
+    background: white;
+    min-height: 650px;
+  }
+
+  #footer{
+    clear: both;
+    border-top: 2px solid;
+    border-top-color: #000;
+    height: 7em;
+    background-color: #67B4F2;
+    p{
+      padding-top: 2px;
+      margin: 0;
+    }
+  }
+  #side {
+    float: left;
+    padding: 1em ;
+    width: 20em;
+    background: #8CD2E1;
+
+    form, div{
+      display: inline;
+    }
+
+    input{
+      font-size: small;
+    }
+
+    #cart{
+      font-size: smaller;
+      color: white;
+      width: 20em;
+
+      table{
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 10px;
+        width: 25em;
+      }
+      hr{
+        color: #fff;
+        height: 2px;
+        margin-top: 15px;
+      }
+    }
+
+    ul {
+      padding-left: 2em;
+      li {
+        list-style: none;
+        a {
+          color: #595959;
+          font-size: 1.5em;
+          line-height: 2.5em;
+        }
+      }
+    }
+  }
+}
+
+.spinbike_form{
+  fieldset{
+    background: #8CD2E1;
+    legend{
+      color: #fff;
+      background: #595959;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+
+    .submit {
+      margin-left: 4em;
+    }
+    br {
+      display: none
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<%= form_for(@repair) do |f| %>
+  <% if @repair.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@repair.errors.count, "error") %> prohibited this repair from being saved:</h2>
+
+      <ul>
+      <% @repair.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <fieldset>
+   <legend>Repair Details</legend>
+  <div class="repair_form">
+    <%= f.label :delivery %><br />
+    <%= f.date_select :delivery %>
+  </div>
+  <div class="repair_form">
+    <%= f.label :collection %><br />
+    <%= f.date_select :collection %>
+  </div>
+  <div class="repair_form">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+ </fieldset>
+    <br/>
+ <fieldset>
+   <legend>Contact Details</legend>
+  <div class="repair_form">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="repair_form">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="repair_form">
+    <%= f.label :address %><br />
+    <%= f.text_area :address %>
+  </div>
+  <div class="repair_form">
+    <%= f.label :phone %><br />
+    <%= f.number_field :phone %>
+  </div>
+ </fieldset>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

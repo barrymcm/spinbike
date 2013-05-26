@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  price: 9.99
+  category: MyString
+  image_url: MyString
+
+two:
+  title: MyString
+  description: MyText
+  price: 9.99
+  category: MyString
+  image_url: MyString
+
+bikes:
+  title: Standard Mountain Bike
+  description:
+    Ideal for people beginning to mountain bike
+  price: €650.99
+  category: mtb
+  image_url: std_mtb.jpg

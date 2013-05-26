@@ -1,0 +1,8 @@
+<h1>Welcome</h1>
+<div>
+<% date = Time.now.asctime %>
+</p>Today is <%= date %><p>
+    <br/>
+<p>We have <%= pluralize(@total_orders, 'order') %></p>
+ <p><%= link_to 'Click here to view your orders', orders_path %>
+</div>

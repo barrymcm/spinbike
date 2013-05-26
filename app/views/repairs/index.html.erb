@@ -1,0 +1,35 @@
+<h1>Listing repairs</h1>
+
+<table>
+  <tr>
+    <th>Delivery</th>
+    <th>Collection</th>
+    <th>Description</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @repairs.each do |repair| %>
+  <tr>
+    <td><%= repair.delivery %></td>
+    <td><%= repair.collection %></td>
+    <td><%= repair.description %></td>
+    <td><%= repair.firstname %></td>
+    <td><%= repair.lastname %></td>
+    <td><%= repair.address %></td>
+    <td><%= repair.phone %></td>
+    <td><%= link_to 'Show', repair %></td>
+    <td><%= link_to 'Edit', edit_repair_path(repair) %></td>
+    <td><%= link_to 'Destroy', repair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Repair', new_repair_path %>

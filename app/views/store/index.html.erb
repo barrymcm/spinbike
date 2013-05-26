@@ -1,0 +1,27 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Spinbike Store</h1>
+
+<% @products.each do |product| %>
+    <% if product.title == "XC Mountain Bike" || product.title == "Clothes" || product.title == "Racing Bike" || product.title == "Hybrid"%>
+        <div class="entry">
+          <%= image_tag(product.image_url) %>
+          <% if product.title == "XC Mountain Bike" %>
+              <h3><%=  link_to "Mountain Bikes", mountain_bikes_path %></h3>
+          <%end%>
+          <% if product.title == "Racing Bike" %>
+              <h3><%= link_to "Road Bikes", road_bikes_path %></h3>
+          <%end%>
+          <% if product.title == "Clothes" %>
+              <h3><%= link_to "Accessories", accessories_path %></h3>
+          <%end%>
+          <% if product.title == "Hybrid" %>
+              <h3><%= link_to "Leisure Bikes", leisure_bikes_path  %></h3>
+          <%end%>
+        </div>
+    <% end %>
+<% end %>
+
+

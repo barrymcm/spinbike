@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Delivery:</b>
+  <%= @repair.delivery %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%= @repair.collection %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @repair.description %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @repair.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @repair.lastname %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @repair.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @repair.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_repair_path(@repair) %> |
+<%= link_to 'Back', repairs_path %>
