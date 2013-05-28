@@ -119,6 +119,9 @@ DEPENDENCIES
   pg
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
+<<<<<<< HEAD
   thin
+=======
+>>>>>>> 622bfd47fb6c9af8a9110805251145503887de86
   uglifier (>= 1.0.3)
   will_paginate (~> 3.0)
